@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "hello.message",
+    "type": "java.lang.String",
+    "description": "메타 데이터로 정의한 프로퍼티 메세지 입니다."
+  },
+  {
+    "name": "hello.countries",
+    "type": "java.lang.String",
+    "description": "A description for 'hello.countries'"
+  },
+  {
+    "name": "hello.account",
+    "type": "java.lang.String",
+    "description": "A description for 'hello.account'"
+  }
+]}
