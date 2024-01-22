@@ -33,7 +33,12 @@ public class CustomerController {
 
 	@GetMapping("/customer/search")
 	public List<Customer> searchCustomerName(String name) {
-		return repository.findByNameLike("%" + name + "%");
+		return repository.findByNameLikeOrderByAddressDesc("%" + name + "%");
+	}
+
+	@GetMapping("/customer/vip")
+	public List<Customer> vipCustomerName(String name, String address) {
+		return repository.findByNameLikeAndAddressLike("%"+name+"%", "%"+address+"%");
 	}
 
 	@GetMapping("/customer/list")
